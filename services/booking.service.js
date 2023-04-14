@@ -1,7 +1,7 @@
 import { client } from '../index.js';
 
 export async function addBookings(data) {
-    return await client.db('b41wd2').collection('hallbook').insertMany(data);
+    return await client.db('b41wd2').collection('hallbook').insertMany([data]);
 }
 
 export async function getCustomerStatus() {
